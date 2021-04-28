@@ -3,7 +3,7 @@
   --text-main-color: #111;
   --text-modal-color: #555;
   --main-color: #0398ba;
-  --main-modal-color: #0298b9;
+  --main-modal-color: #0398ba30;
 }
 
 /* Global configuration */
@@ -43,60 +43,56 @@ h3 {
 }
 
 /* Nav bar */
-#mainNav {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
+header {
   justify-content: space-between;
   width: 100%;
   height: 10vh;
   background: linear-gradient(#0297b915 1%, white 99%);
 }
 
-#mainNav h2 {
+header h2 {
   margin: 0.5rem 1rem;
 }
 
-#mainNav h2 img {
+header h2 img {
   height: 3.5vh;
 }
 
-#mainNav ul {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
+header #main-nav {
   border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
-#mainNav ul li {
-  color: var(--text-modal-color);
-  display: inline-block;
+header ul {
+  display: relative;
+}
+
+header ul li {
+  display: absolute;
   list-style: none;
   padding: 0.2em;
 }
 
-#mainNav ul li:hover {
-  color: var(--text-main-color);
-  font-weight: bold;
-}
-
-#mainNav a {
+header a {
   text-decoration: none;
   color: inherit;
 }
 
-#mainNav li:last-child {
-  border: solid 1px red;
+#main-nav li:last-child {
+  display: none;
 }
 
 /* Sections */
-/* .section {
-  height: 80vh;
-} */
+
+.section {
+  height: 95vh;
+}
+
+/* Section 1 */
 
 .section1 {
   justify-content: space-around;
   width: 80%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -125,5 +121,67 @@ h3 {
 }
 .section1 img {
   position: relative;
-  height: 50vh;
+  height: 35vh;
+}
+
+/* Section 2 */
+
+.section2 {
+  background-color: var(--main-modal-color);
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.section2 > * {
+  margin: 0.1rem 0;
+}
+
+.section2 .line {
+  height: 1vh;
+  width: 5vw;
+  border-bottom: 0.5rem solid var(--main-color);
+}
+
+.section2 .teams {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.section2 .btns {
+  width: 80%;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.section2 .btns button {
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.section2 .cards {
+  width: 90%;
+  height: 60vh;
+}
+
+.section2 .card {
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 1rem;
+  height: 100%;
+  width: 20%;
+  padding: 0 1rem;
+}
+
+.section2 .card > * {
+  margin: 0.5rem;
+}
+
+.section2 .card img {
+  height: 3rem;
+}
+
+.section2 .card p {
+  height: 60%;
+  line-height: 1.5rem;
 }
