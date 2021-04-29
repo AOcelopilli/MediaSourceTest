@@ -4,7 +4,8 @@ const d = document,
   $btnTeamA = d.getElementById("teamA"),
   $btnTeamB = d.getElementById("teamB"),
   $elTeamA = d.getElementsByClassName("teamA"),
-  $elTeamB = d.getElementsByClassName("teamB");
+  $elTeamB = d.getElementsByClassName("teamB"),
+  $questions = d.getElementsByClassName("question");
 
 d.addEventListener("mouseover", (e) => {
   if (e.target.matches(".show-a") || e.target.matches(".show-a *")) {
@@ -33,5 +34,13 @@ d.addEventListener("click", (e) => {
 
     $elTeamB[0].style.visibility = "hidden";
     $elTeamB[1].style.visibility = "hidden";
+  }
+
+  if (e.target.classList.contains("circle")) {
+    Array.from($questions).forEach((el) => {
+      el.classList.remove("active");
+    });
+
+    e.target.parentNode.parentNode.classList.add("active");
   }
 });
