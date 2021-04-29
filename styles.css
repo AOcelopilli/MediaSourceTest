@@ -5,6 +5,7 @@
   --main-color: #0398ba;
   --main-modal-color: #0398ba30;
   --second-main-color: #e3eaee;
+  --second-modal-color: #bbc8d0;
 }
 
 /* Global configuration */
@@ -297,14 +298,60 @@ p {
   left: 10%;
   background-color: #fff;
   width: 50%;
-  padding: 0.4rem 0;
+  padding: 0.2rem 0;
   border-radius: 1rem;
   box-shadow: 0px 0px 6px #333;
   z-index: 10;
 }
 
-/* .section4 img {
-  width: 200px;
-  height: 200px;
+/* section 5 */
+
+.section5 {
+  background-color: var(--second-modal-color);
 }
- */
+
+.section5 #contact-form {
+  height: 80%;
+  width: 80%;
+}
+
+.section5 .left {
+  float: left;
+  width: 50%;
+}
+
+.section5 .right {
+  float: right;
+  width: 50%;
+}
+
+#contact-form label {
+  margin-left: 20px;
+  width: 50%;
+  display: inline-block;
+}
+
+#contact-form input,
+textarea {
+  margin: 1rem 0 0.5rem 0;
+  width: 80%;
+  height: 35px;
+  border-radius: 1rem;
+  border: none;
+  padding: 0 1.5rem;
+}
+
+.section5 textarea {
+  height: 120px;
+  padding: 1rem 2rem;
+  width: 100%;
+  resize: none;
+}
+
+#contact-form input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  width: 20%;
+  margin: 1rem 40%;
+}
