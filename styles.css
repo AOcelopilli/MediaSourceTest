@@ -3,7 +3,8 @@
   --text-main-color: #111;
   --text-modal-color: #555;
   --main-color: #0398ba;
-  --main-modal-color: #0398ba30;
+  --main-modal-color: #00516330;
+  --main-dark-color: #6d8893;
   --second-main-color: #e3eaee;
   --second-modal-color: #bbc8d0;
 }
@@ -416,5 +417,44 @@ p {
 
 /* data  */
 .data {
-  background-color: var(--second-main-color);
+  background-color: var(--second-modal-color);
+  color: white;
+}
+
+.data .data-column:first-child {
+  width: 69%;
+  height: 50vh;
+  justify-content: space-around;
+}
+
+.data-column nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0.5rem 1rem;
+}
+
+.data .data-column:last-child {
+  width: 30%;
+}
+
+.data-column:last-child p:last-of-type,
+input {
+  background-color: var(--main-color);
+  border-radius: 1rem;
+  width: 50%;
+  margin-left: 10%;
+  text-align: center;
+  height: 30px;
+}
+
+.data-column input {
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--main-dark-color);
+  color: white;
+  height: 10vh;
 }
