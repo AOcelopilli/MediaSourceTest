@@ -4,6 +4,7 @@
   --text-modal-color: #555;
   --main-color: #0398ba;
   --main-modal-color: #0398ba30;
+  --second-main-color: #e3eaee;
 }
 
 /* Global configuration */
@@ -40,6 +41,12 @@ h2 {
 
 h3 {
   font-size: 1.1rem;
+}
+
+.line {
+  height: 1vh;
+  width: 5vw;
+  border-bottom: 0.5rem solid var(--main-color);
 }
 
 /* Nav bar */
@@ -136,12 +143,6 @@ header a {
   margin: 0.1rem 0;
 }
 
-.section2 .line {
-  height: 1vh;
-  width: 5vw;
-  border-bottom: 0.5rem solid var(--main-color);
-}
-
 .section2 .teams {
   margin: 2rem 0;
   width: 100%;
@@ -235,3 +236,75 @@ header a {
 p {
   z-index: 10;
 }
+
+/* section 4 */
+
+.section4 {
+  background-color: var(--second-main-color);
+}
+
+.section4 .email {
+  width: 80%;
+  height: 80%;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 3px #333;
+  background-color: #fff;
+  padding: 1rem 0;
+}
+
+.section4 .text {
+  align-items: flex-start;
+  height: 80%;
+  width: 40%;
+}
+
+.section4 .text p {
+  line-height: 1.4rem;
+}
+
+.section4 .media-content {
+  height: 80%;
+  position: relative;
+  width: 50%;
+}
+
+.section4 .media-content img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 200px;
+  box-shadow: 0px 0px 6px #333;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.section4 .media-content img:last-of-type {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  height: 250px;
+  z-index: 5;
+  box-shadow: 0px 0px 6px #333;
+  border-radius: 0.5rem;
+}
+
+.section4 .media-content p {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 10%;
+  background-color: #fff;
+  width: 50%;
+  padding: 0.4rem 0;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 6px #333;
+  z-index: 10;
+}
+
+/* .section4 img {
+  width: 200px;
+  height: 200px;
+}
+ */
