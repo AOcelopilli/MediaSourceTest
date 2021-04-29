@@ -196,6 +196,10 @@ header h2 img {
   padding: 0.5rem 1.5rem;
 }
 
+.section2 .btns button:disabled {
+  background-color: gray;
+}
+
 .section2 .cards {
   width: 90%;
   height: 60vh;

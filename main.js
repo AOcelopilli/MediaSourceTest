@@ -20,7 +20,10 @@ d.addEventListener("mouseout", (e) => {
 });
 
 d.addEventListener("click", (e) => {
-  if (e.target.id == "teamA") {
+  if (e.target.id == "teamB") {
+    $btnTeamB.disabled = true;
+    $btnTeamA.disabled = false;
+
     $elTeamB[0].style.visibility = "visible";
     $elTeamB[1].style.visibility = "visible";
 
@@ -28,7 +31,10 @@ d.addEventListener("click", (e) => {
     $elTeamA[1].style.visibility = "hidden";
   }
 
-  if (e.target.id == "teamB") {
+  if (e.target.id == "teamA") {
+    $btnTeamA.disabled = true;
+    $btnTeamB.disabled = false;
+
     $elTeamA[0].style.visibility = "visible";
     $elTeamA[1].style.visibility = "visible";
 
