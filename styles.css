@@ -342,6 +342,10 @@ textarea {
   padding: 0 1.5rem;
 }
 
+#contact-form input {
+  background-color: #fff;
+}
+
 .section5 textarea {
   height: 120px;
   padding: 1rem 2rem;
@@ -383,8 +387,7 @@ textarea {
   margin: 1rem 0.5rem;
 }
 
-.faq,
-p {
+.faq > p {
   margin: 1rem auto;
 }
 
@@ -419,12 +422,23 @@ p {
 .data {
   background-color: var(--second-modal-color);
   color: white;
+  justify-content: space-around;
 }
 
 .data .data-column:first-child {
-  width: 69%;
+  width: 50%;
   height: 50vh;
-  justify-content: space-around;
+}
+
+.data-column .info,
+nav,
+.data-tools {
+  height: 40vh;
+}
+
+.data-column nav {
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .data-column nav a {
@@ -433,23 +447,39 @@ p {
   margin: 0.5rem 1rem;
 }
 
+.data hr {
+  position: absolute;
+  right: 30%;
+  width: 40vh;
+  transform: rotate(90deg);
+  border: 1px solid white;
+}
+
 .data .data-column:last-child {
   width: 30%;
+  height: 40vh;
+  align-items: flex-start;
 }
 
 .data-column:last-child p:last-of-type,
 input {
+  height: 30px;
   background-color: var(--main-color);
   border-radius: 1rem;
-  width: 50%;
-  margin-left: 10%;
-  text-align: center;
-  height: 30px;
 }
 
-.data-column input {
+.data-column:last-child p:last-of-type {
+  width: 60%;
+  padding: 0.5rem 1rem;
+  line-height: 15px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.data-column:last-child input {
   background-color: #fff;
   border: 1px solid var(--main-color);
+  padding: 0.5rem;
 }
 
 /* Footer */
@@ -457,4 +487,8 @@ footer {
   background-color: var(--main-dark-color);
   color: white;
   height: 10vh;
+}
+
+footer span {
+  font-size: 0.8rem;
 }
