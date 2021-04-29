@@ -12,15 +12,17 @@
 <body>
 
   <header class="flex-row">
+
     <h2><img src="assets/Logos/logoMSBlack.svg" alt="Media Source"></h2>
-    <nav id="main-nav" class="flex-row">
-      <a href="#">Beneficios</a>
-      <ul>
-        <li><a href="#">Herramientas</a></li>
-        <li><a href="#">Gmail</a></li>
+
+    <nav id="main-nav">
+      <ul class="flex-row">
+        <li><a href="#">Beneficios</a></li>
+        <li class="show-a"><a href="#">Herramientas</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contactar</a></li>
       </ul>
-      <a href="#">FAQ</a></li>
-      <a href="#">Contactar</a>
+      <a href="#" class="a-to-show">Gmail</a>
     </nav>
   </header>
 
@@ -46,30 +48,30 @@
 
       <div class="teams flex-col">
         <div class="btns flex-row">
-          <button>MOSTRAR TEAM 1</button>
-          <button>MOSTRAR TEAM 2</button>
+          <button id="teamA">MOSTRAR TEAM 1</button>
+          <button id="teamB">MOSTRAR TEAM 2</button>
         </div>
         <div class="cards flex-row">
-          <div class="card flex-col">
+          <div class="card flex-col teamA">
             <img src="assets/Logos/esfera.svg" alt="esfera">
             <h3>Conecta</h3>
             <p>Todos tus documentos en una misma plataforma y, a diferencia de un intranet, tendrás acceso desde
               cualquier
               lugar.</p>
           </div>
-          <div class="card flex-col">
+          <div class="card flex-col teamA">
             <img src="assets/Logos/lapiz.svg" alt="lapiz">
             <h3>Crea</h3>
             <p>Con las herramientas de Workspace podrás crear todos los documentos, hojas de cálculo, presentaciones o
               cualquier otro recurso que necesitenes.</p>
           </div>
-          <div class="card flex-col">
+          <div class="card flex-col teamB">
             <img src="assets/Logos/engrane.svg" alt="engrane">
             <h3>Administra</h3>
             <p>Organiza tus carpetas y documentos para encontrarlos en segundos. Tus procesos administrativos serán
               más ágiles dejando espacio para lo más importante: la ejecución</p>
           </div>
-          <div class="card flex-col">
+          <div class="card flex-col teamB">
             <img src="assets/Logos/candado.svg" alt="candado">
             <h3>Resguarda</h3>
             <p>Workspace de Google garantiza altos estándares de seguridad para que tu información empresarial esté
@@ -259,6 +261,7 @@
     <span>Copyright 2020 | Diseño y programación por Media Source</span> <span>Aviso de privacidad | Terminos y
       condiciones</span>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
